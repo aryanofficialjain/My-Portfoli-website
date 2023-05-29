@@ -25,6 +25,7 @@ ul{
 	--nav-bg-color: #222;
 	--custom-font-style: 'Montserrat', sans-serif;
 	--boldness: lighter;
+	--bar-bg-color: white;
 
 /* 
 	--bg-color: white;
@@ -165,8 +166,7 @@ padding: 10px;
 .about hr{
 	width: 30%;
 	margin-bottom: 20px;
-	animation: bar 2.5s linear 1;
-	transition: all 1s ease-out;
+	animation: bar 6s linear forwards;
 }
 
 .about p{
@@ -207,11 +207,163 @@ padding: 10px;
 
 }
 
-.skillbar progress{
+.skillbar .progress{
+	margin-top: 15px;
 	width: 90%;
 	height: 30px;
-	color: grey;
+	background-color:grey;
 
+
+}
+
+
+.skillbar #bar-1 {
+	width: 90%;
+	height: 30px;
+	background-color:var(--bar-bg-color);
+	animation: progressbar1 7s linear forwards;
+	transition: all 3s ease-out;
+	color: black;
+	text-align: right;
+	line-height: 30px;
+	padding: 0px 10px;
+	font-weight: bold;
+}
+
+/* progress bar anumation */
+@keyframes progressbar1 {
+	0%{
+		width: 5%;
+	}
+	50%{
+		width: 25%;
+	}
+	60%{
+		width: 45%;
+	}
+	70%{
+		width: 65%;
+	}
+
+	80%{
+		width: 75%;
+	}
+	90%{
+		width: 85%;
+	}
+	100%{
+		width: 90%;
+	}
+
+	
+}
+
+
+
+
+.skillbar #bar-2 {
+	width: 75%;
+	height: 30px;
+	background-color:var(--bar-bg-color);
+		animation: progressbar2 5s linear forwards;
+	transition: all 3s ease-out;
+		color: black;
+	text-align: right;
+		line-height: 30px;
+	padding: 0px 10px;
+/* 	padding: 5px 10px; */
+	font-weight: bold;
+}
+
+
+/* progress bar anumation */
+@keyframes progressbar2 {
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 25%;
+	}
+	75%{
+		width: 50%;
+	}
+	100%{
+		width: 75%;
+	}
+
+	
+}
+
+
+.skillbar #bar-3 {
+	width: 65%;
+	height: 30px;
+	background-color:var(--bar-bg-color);
+		animation: progressbar3 6s linear forwards;
+	transition: all 3s ease-out;
+		color: black;
+	text-align: right;
+		line-height: 30px;
+	padding: 0px 10px;
+/* 	padding: 5px 10px; */
+	font-weight: bold;
+}
+
+
+/* progress bar anumation */
+@keyframes progressbar3 {
+	0%{
+		width: 0%;
+	}
+	50%{
+		width: 25%;
+	}
+	75%{
+		width: 50%;
+	}
+	100%{
+		width: 65%;
+	}
+
+	
+}
+
+
+/* testonimaol */
+
+.testomonial{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	width: 90%;
+	padding: 20px;
+	background-color: var(--bar-bg-color);
+
+
+}
+
+.testomonial-item{
+/* 	background-color: red; */
+/* 	box-shadow: 0px 0px 10px grey; */
+	padding: 20px;
+	width: 10rem;
+/* 	height: 10rem; */
+	border-radius: 50%;
+/* 	padding: 20px; */
+color: var(--bg-color);
+}
+
+.testomonial-item h4{
+	font-size: 2.6rem;
+	font-weight: lighter;
+	transition: all 2s ease-in-out;
+	margin-bottom: 10px;
+}
+
+.testomonial-item p{
+	color: grey;
+	font-size: 1.1rem;
 }
 
 
@@ -330,7 +482,11 @@ padding: 10px;
 
 
 
-/* bar animation */
+
+/* animation */
+
+
+/* about us my name hr animation */
 @keyframes bar{
 	0%{
 		width: 1%;
@@ -343,3 +499,6 @@ padding: 10px;
 		width: 30%;
 	}
 }
+
+
+
