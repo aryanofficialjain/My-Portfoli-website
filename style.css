@@ -17,6 +17,7 @@ ul{
 
 /* variable color */
 :root{
+	--body-bg-color: black;
 	--bg-color: black;
 	--font-color: white;
 	--nav-bg-color: #222;
@@ -28,8 +29,22 @@ ul{
 
 }
 
+/* uitlity classes */
+
+.container{
+	width: 100%;
+	max-width: 78rem;
+	margin-left: auto;
+/* 	padding: 20px; */
+	background-color: red;
+/* 	background-color: var(--body-bg-color); */
+}
+
+
+/* custom styling */
+
 body{
-	background-color: rebeccapurple;
+/* 	background-color: var(--body-bg-color); */
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -90,4 +105,23 @@ list-style-type: none;
 /* hover links */
 #nav-links a:hover{
 	background-color: var(--bg-color);
+}
+
+
+/* header */
+header{
+	text-align: center;
+	padding: 40px;
+	background-color: var(--bg-color);
+	color: var(--font-color);
+}
+
+header h1{
+	font-size: 2.9rem;
+	margin-bottom: 10px;
+}
+
+header p{
+	font-size: 1.5rem;
+	padding: 20px;
 }
