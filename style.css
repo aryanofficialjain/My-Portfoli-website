@@ -530,10 +530,92 @@ background-image: linear-gradient(315deg, #acabb0 0%, #e01c34 74%);
 
 
 
+/* contact section */
+
+.contact-container{
+	color: var(--font-color);
+	padding: 10px;
+}
+
+.contact-container h3{
+	font-size: 2rem;
+	font-weight: var(--boldness);
+}
 
 
+.contact-container hr{
+	margin: 10px 0px 15px 0px;
+	padding: 0px;
+	width: 25%;
+	animation: bar 10s linear forwards;
+}
+
+.contact-section1 ul{
+	padding: 20px;
+	font-size: 1.3rem;
+	width: 30%;
 
 
+}
+.contact-section1 ul li{
+	margin: 10px;
+	width: 100%;
+	padding: 5px;
+/* 	background-color: red; */
+}
+
+.contact-section1 ul li span{
+	margin-left: 30px;
+}
+
+
+.contact-section2{
+	padding: 10px;
+}
+
+.contact-section2 #cpara{
+	color: grey;
+	font-size: 1.2rem;
+	margin-bottom: 20px;
+}
+
+.contact-section2 form{
+	padding: 10px;
+	width: 90%;
+/* 	background-color: red; */
+}
+
+.contact-section2 form .input{
+	padding: 10px;
+}
+
+
+.contact-section2 form input{
+	padding: 10px 5px;
+	font-size: 1.2rem;
+	width: 100%;
+	outline: none;
+	border: none;
+}
+
+.contact-section2 .btn{
+	padding: 10px;
+}
+
+.contact-section2 button{
+	padding: 12px 24px;
+	font-size: 1.2rem;
+	outline: none;
+	border: none;
+	cursor: pointer;
+
+}
+
+
+.contact-section2 button:hover{
+	background-color: grey;
+	color: white;
+}
 
 
 
