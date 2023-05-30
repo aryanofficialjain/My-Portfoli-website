@@ -494,6 +494,40 @@ background-image: linear-gradient(315deg, #acabb0 0%, #e01c34 74%);
 
 
 
+/* photo section */
+
+.photo-container{
+	width: 90%;
+	color: var(--font-color);
+
+}
+
+.photo-container h4{
+	font-size: 2rem;
+	font-weight: var(--boldness);
+	margin: 40px 0px 20px 0px;
+
+}
+
+.photo-container hr{
+	width: 30%;
+	margin-bottom: 20px;
+	animation: bar 15s linear forwards;
+}
+
+.photos{
+	display: flex;
+	gap: 15px;
+}
+.photo{
+	width: 50%;
+}
+
+.photo img{
+	width: 100%;
+	margin: 5px 0px;
+}
+
 
 
 
