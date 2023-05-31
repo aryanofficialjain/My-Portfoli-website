@@ -146,15 +146,3 @@ const emailError = document.getElementById('email-error');
 const subjectError = document.getElementById('subject-error');
 const messageError = document.getElementById('message-error');
 
-
-function validate(){
-	let name = document.getElementById('name');
-
-	if (name.length == 0) {
-		nameError.innerHTML = 'Name is Required';
-		return false;
-		// statement
-	}
-
-}
-
