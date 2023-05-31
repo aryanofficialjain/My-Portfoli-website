@@ -21,9 +21,9 @@
             </div>
             <ul id="nav-links">
                 <a href="#" id="home"><i class="fa-solid fa-house-chimney"></i><p style="font-size:1.2rem;">Home</p></a>
-                <a href="#"><i class="fa-solid fa-user-large"></i><p style="font-size:1.2rem;">About</p></a>
-                <a href="#"><i class="fa-regular fa-eye"></i><p style="font-size:1.2rem;">Photos</p></a>
-                <a href="#"><i class="fa-solid fa-envelope"></i><p style="font-size:1.2rem;">Contact</p></a>
+                <a href="#about"><i class="fa-solid fa-user-large"></i><p style="font-size:1.2rem;">About</p></a>
+                <a href="#photo"><i class="fa-regular fa-eye"></i><p style="font-size:1.2rem;">Photos</p></a>
+                <a href="#contact"><i class="fa-solid fa-envelope"></i><p style="font-size:1.2rem;">Contact</p></a>
             </ul>
             
         </nav>
@@ -46,7 +46,7 @@
 
         <!-- About section -->
     <div class="container2">
-            <div class="about">
+            <div class="about" id="about">
                 <h2>My Name</h2>
                 <hr>
                 <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -163,7 +163,7 @@
             </div>
 
 
-            <div class="photo-container">
+            <div class="photo-container" id="photo">
                 <h4>My Photos</h4>
                 <hr>
                 <div class="photos">
@@ -181,9 +181,10 @@
                 </div>
             </div>
 
-
+            <!-- do form validation and learn it -->
+            
             <!-- contact section -->
-            <div class="contact-container">
+            <div class="contact-container" id="contact">
                 <h3>Contact Me</h3>
                 <hr>
                 <div class="contact-section1">
@@ -196,31 +197,31 @@
 
                 <div class="contact-section2">
                     <p id="cpara">Let's get in touch. Send me a message:</p>
-                    <form method="post" action="" autocomplete>
+                    <form method="post" onsubmit="return validate()" name="MyForm" autocomplete>
                         <div class="input" id="name">
-                            <input type="text" placeholder="Name" name="fname" onsubmit=" return validate()"><br>
-                            <p id="name-error"></p>
+                            <input type="text" placeholder="Name" name="fname"><br>
+                            <p class="formerror"></p>
                         </div>
 
                         <div class="input" id="email">
                             <input type="email" placeholder="Email"  name="femail"><br>
-                            <p id="email-error"></p>
+                            <p class="formerror"></p>
 
                         </div>
 
                         <div class="input" id="subject">
                             <input type="text" placeholder="Subject"  name="fsubject"><br>
-                            <p id="subject-error"></p>    
+                            <p class="formerror"></p>    
                         </div>
 
                         <div class="input" id="message">
                             <input type="text" placeholder="Message"  name="fmessage"><br>
-                            <p id="message-error"></p>    
+                            <p class="formerror"></p>    
                         </div>
                         
                         <div class="btn">
                             <button type="button" value="submit"><i class="fa-solid fa-paper-plane"></i> SEND MESSAGE</button>
-                            <p id="btn-error"></p>    
+                            <p class="formerror"></p>    
                         </div>
                         
                         

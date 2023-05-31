@@ -141,8 +141,25 @@ setInterval(()=>{
 
 // form validation
 
-const nameError = document.getElementById('name-error').value;
-const emailError = document.getElementById('email-error');
-const subjectError = document.getElementById('subject-error');
-const messageError = document.getElementById('message-error');
+function srterror(id,error){
+	element = document.getElementById(id);
+	element.getElementsByClassName('formerror')[0].innerHTML = error;
+	//sets error inside tag of id
+}
 
+function validate(){
+	var returnval = true;
+	var name = document.forms['myForm']['fname'].value;
+	if (name.length<5) {
+		seterror("name","Length of name is too short");
+		returnval = false;
+	}
+
+
+
+
+
+
+
+	return returnval;
+}
